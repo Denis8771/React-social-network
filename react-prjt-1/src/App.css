@@ -12,7 +12,7 @@
 
 .app-wrapper-content {
     grid-area: c;
-    background-color: rgb(112, 102, 7);
+    background-color: rgba(7, 9, 112, 0.295);
 }
 
 
