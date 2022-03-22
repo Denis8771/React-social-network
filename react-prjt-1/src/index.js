@@ -14,9 +14,9 @@ let posts = [
 
   let dialogs = [
     { id: 1, name: "Dimon" },
+    { id: 2, name: "Andrew" },
     { id: 3, name: "Andrew" },
     { id: 4, name: "Andrew" },
-    { id: 5, name: "Andrew" },
     { id: 5, name: "Andrew" },
 ];
 
