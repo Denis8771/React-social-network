@@ -1,12 +1,10 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
-
-
 }
 
 .dialogsItems .dialog {
-    padding: 10px;
+    /* padding: 5px; */
 }
 
 .dialogsItems .active {
@@ -14,11 +12,37 @@
 }
 
 .messages {
-    padding: 10px;
+    /* padding: 10px; */
+    color: rgb(5, 80, 80);
+    
 }
 
+.message {
+    padding: 11px;
+}
 
+.dialogImg img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
 
-.messages .message {
-    
+.dialogImg {
+    display: grid;
+    grid-template-columns: 4fr 10fr;
+}
+
+.button {
+    border-radius: 7px;
+    width: 120%;
+    height: 30px;
+}
+
+textarea {
+    padding-top: 10px;
+    padding-left: 33px;
+    padding-right: 0;
+    width: 99%;
+    /* height: 30px; */
+    border-radius: 7px;
 }

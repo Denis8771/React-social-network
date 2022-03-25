@@ -28,6 +28,17 @@ let state = {
             { id: 5, name: "Andrew" }
         ]
 
+    },
+
+    sidebarPage: {
+
+        friends: [
+            { id: 1, name: "Dimon" },
+            { id: 2, name: "Andrew" },
+            { id: 3, name: "Lena" }
+        ]
+
+
     }
  
  

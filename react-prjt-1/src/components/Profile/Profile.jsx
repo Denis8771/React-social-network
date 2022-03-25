@@ -1,3 +1,4 @@
+
 import React from "react";
 import MyPosts from "./MyPost/MyPosts";
 import s from './Profile.module.css';
@@ -7,7 +8,6 @@ const Profile = (props) => {
 
     return <div>
         <ProfileInfo />
-
         <MyPosts posts={props.state.posts} />
     </div>
 }

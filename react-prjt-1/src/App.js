@@ -7,30 +7,32 @@ import Profile from "./components/Profile/Profile";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
+import Friends from "./Friends/Friends";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 
 const App = (props) => {
 
   return (
 
-    <BrowserRouter>
-      <div className='app-wrapper'>    {/*   компонента        */}
-        <Header />                     {/*   подкомпонента     */}
-        <Navbar />                     {/*   подкомпонента     */}
-        <div className='app-wrapper-content'>
 
-          <Routes>
-            <Route path="/profile/*" element={<Profile state={props.state.profilePage} />} />
+    <div className='app-wrapper'>    {/*   компонента        */}
+      <Header />                     {/*   подкомпонента     */}
+      <Navbar />                     {/*   подкомпонента     */}
+      <div className='app-wrapper-content'>
 
-            <Route path="/dialogs/*" element={<Dialogs state={props.state.dialogPage} />} />
-            <Route path='/news' element={<News />} />
-            <Route path='/music' element={<Music />} />
-            <Route path='/settings' element={<Settings />} />
-          </Routes>
+        <Routes>
+          <Route path="/profile/*" element={<Profile state={props.state.profilePage} />} />
+          <Route path="/dialogs/*" element={<Dialogs state={props.state.dialogPage} />} />
+          <Route path='/friends*' element={<Friends state={props.state.sidebarPage} />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/music' element={<Music />} />
+          <Route path='/settings' element={<Settings />} />
+        </Routes>
 
-        </div>
       </div>
-    </BrowserRouter>
+    </div>
+
   );
 }
 
