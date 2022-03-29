@@ -26,8 +26,8 @@ const Dialogs = (props) => {
             </div>
 
             <div>
-                <div className={s.textarea1}>                    
-                    <textarea ref={newPostElement} placeholder="Напишите сообщение..."></textarea>
+                <div>                    
+                    <textarea className={s.textarea} ref={newPostElement} placeholder="Напишите сообщение..."></textarea>
                 </div>
                 <div>
                     <button onClick={ addPost } className={s.button}>Отправить</button>

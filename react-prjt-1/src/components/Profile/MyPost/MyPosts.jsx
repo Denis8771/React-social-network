@@ -9,11 +9,12 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef();
     
     let addPost = () => {
+        debugger;
         let text = newPostElement.current.value;
-        alert(text);
+        props.addPost(text);
     }
     
-    return (
+    return (    
         <div className={s.postBlock}>
             <h3>My posts</h3>
             <div>

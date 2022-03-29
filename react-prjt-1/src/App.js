@@ -7,7 +7,7 @@ import Profile from "./components/Profile/Profile";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
-import Friends from "./Friends/Friends";
+import Friends from "./components/Friends/Friends";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
@@ -15,14 +15,13 @@ const App = (props) => {
 
   return (
 
-
     <div className='app-wrapper'>    {/*   компонента        */}
       <Header />                     {/*   подкомпонента     */}
       <Navbar />                     {/*   подкомпонента     */}
       <div className='app-wrapper-content'>
 
         <Routes>
-          <Route path="/profile/*" element={<Profile state={props.state.profilePage} />} />
+          <Route path="/profile/*" element={<Profile state={props.state.profilePage} addPost={props.addPost} />} />
           <Route path="/dialogs/*" element={<Dialogs state={props.state.dialogPage} />} />
           <Route path='/friends*' element={<Friends state={props.state.sidebarPage} />} />
           <Route path='/news' element={<News />} />
@@ -32,7 +31,7 @@ const App = (props) => {
 
       </div>
     </div>
-
+  
   );
 }
 
